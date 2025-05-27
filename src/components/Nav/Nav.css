@@ -52,7 +52,13 @@
 .divNavLi:hover::after{
     display: block;
 }
+
 .divNavLi{
     position: relative;
     cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+.divNavList>ul>a{
+    text-decoration: none;
 }
