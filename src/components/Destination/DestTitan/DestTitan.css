@@ -1,4 +1,4 @@
-.destEurGlo{
+.destTitanGlo{
     min-width: 100px;
     min-height: 100px;
     display: flex;
@@ -8,29 +8,29 @@
     left: 50%; /* Centre horizontalement */
     transform: translate(-50%, -50%); /* Ajuste pour centrer par rapport au milieu */
 }
-.divEurLeft{
+.divTitanLeft{
     width: 50%;
     /* grid-column: 1; */
     /* overflow: hidden; */
 }
-.divEurImg{
+.divTitanImg{
     width: 400px;
 }
-.divEurLeft img{
+.divTitanLeft img{
     width: 100%;
 }
-.divEurText{
+.divTitanText{
     width: 40%;
     /* grid-column: 2; */
 
 }
-.divEurText h1{
+.divTitanText h1{
     font-size: 55pt;
     letter-spacing: 6px;
     font-weight: 100;
     margin: 0;
 }
-.divEurTextP{
+.divTitanTextP{
     line-height: 150%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.692);
     padding-bottom: 30px;
@@ -92,7 +92,7 @@ h5{
     left: 20px;
     position: relative;
 }
-.divEurText>p:nth-of-type(2){
+.divTitanText>p:nth-of-type(2){
     left: 20px;
     position: relative;
 }
