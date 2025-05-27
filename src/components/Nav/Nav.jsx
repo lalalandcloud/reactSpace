@@ -1,6 +1,6 @@
 import './Nav.css'
 import logo from '../../assets/img/shared/logo.svg'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import Home from '../../pages/Home/Home'
 
 
@@ -13,11 +13,11 @@ export default function Nav(){
                 <img src={logo} alt="" />
             </div>
             <div className='divNavList'>
-            <ul>
-                <Link to="/" ><li className='divNavLi'>00 HOME</li></Link>
-                <Link to="/destination" ><li className='divNavLi'>01 DESTINATION</li></Link>
-                <Link to="/crew" ><li className='divNavLi'>02 CREW</li></Link>
-                <Link to="/technology" ><li className='divNavLi'>03 TECHNOLOGY</li></Link>
+                <ul>
+                    <NavLink to="/" className='divNavLi' aria-current="page"><li>00 HOME</li></NavLink>
+                    <NavLink to="/destination" className='divNavLi' ><li>01 DESTINATION</li></NavLink>
+                    <NavLink to="/crew" className='divNavLi' ><li>02 CREW</li></NavLink>
+                    <NavLink to="/technology" className='divNavLi' ><li>03 TECHNOLOGY</li></NavLink>
                 </ul>
             </div>
         </div>
