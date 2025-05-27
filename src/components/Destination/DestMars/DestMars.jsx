@@ -1,4 +1,3 @@
-import DestNav from '../DestNav/DestNav'
 import './DestMars.css'
 
 

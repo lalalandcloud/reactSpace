@@ -19,6 +19,7 @@
     padding-top: 10px;
     font-family: "Barlow Condensed", sans-serif;
     position: sticky;
+    grid-column: 2;
 }
 .divNavList{
     width: 60%;

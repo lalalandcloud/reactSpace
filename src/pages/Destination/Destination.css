@@ -1,5 +1,6 @@
 .divDestGlo{
     background-image: url('../../assets/img/destination/background-destination-desktop.jpg');
     height: 100%;
+    display: grid;
 }
 
