@@ -6,7 +6,7 @@
     padding: 0;
     padding-right: 8px;
 }
-.divNavLi::after{
+.divDestNavLi::after{
     content: "";
     top: 40px;
     background-color: #ffffff;
@@ -16,14 +16,14 @@
     right: 0;
     display: none;
 }
-.divNavLi:hover::after{
+.divDestNavLi:hover::after{
     display: block;
 }
-.divNavLi.active::after{
+.divDestNavLi.active::after{
     display: block;
 }
 
-.divNavLi{
+.divDestNavLi{
     position: relative;
     cursor: pointer;
     color: white;
@@ -32,4 +32,8 @@
 }
 .destNavList>ul>a{
     text-decoration: none;
+}
+.destNavList>nav{
+    display: flex;
+    gap: 2vh;
 }

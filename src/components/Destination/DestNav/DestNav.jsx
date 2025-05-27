@@ -1,16 +1,18 @@
+import { NavLink } from 'react-router-dom'
 import './DestNav.css'
+
 
 export default function DestNav(){
 
     return(
 
         <div className='destNavList'>
-            <ul>
-                <li>MOON</li>
-                <li>MARS</li>
-                <li>EUROPA</li>
-                <li>TITAN</li>
-            </ul>
+            <nav>
+                <NavLink to="/destination/moon" className='divDestNavLi'>MOON</NavLink>
+                <NavLink to="/destination/mars" className='divDestNavLi'>MARS</NavLink>
+                <NavLink to="/destination/eu" className='divDestNavLi'>EUROPA</NavLink>
+                <NavLink to="/destination/titan" className='divDestNavLi'>TITAN</NavLink>
+            </nav>
         </div>
     )
 }

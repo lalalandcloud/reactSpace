@@ -1,0 +1,34 @@
+.destMoonGlo{
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    width: 75%;
+    position: absolute; /* Positionnement absolu pour centrer */
+    top: 60%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Ajuste pour centrer par rapport au milieu */
+}
+.divMoonLeft{
+    width: 50%;
+    /* overflow: hidden; */
+}
+.divMoonImg{
+    width: 400px;
+}
+.divMoonLeft img{
+    width: 100%;
+}
+.divMoonText{
+    width: 40%;
+}
+.divMoonText h1{
+    font-size: 55pt;
+    letter-spacing: 6px;
+    font-weight: 100;
+    margin: 0;
+}
+.divMoonTextP{
+    line-height: 150%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.692);
+    padding-bottom: 30px;
+}
