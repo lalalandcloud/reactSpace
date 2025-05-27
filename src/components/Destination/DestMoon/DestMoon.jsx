@@ -18,7 +18,7 @@ export default function DestMoon(){
                     <nav>
                         <NavLink to="/destination/moon" className='divDestNavLi'>MOON</NavLink>
                         <NavLink to="/destination/mars" className='divDestNavLi'>MARS</NavLink>
-                        <NavLink to="/destination/eu" className='divDestNavLi'>EUROPA</NavLink>
+                        <NavLink to="/destination/europa" className='divDestNavLi'>EUROPA</NavLink>
                         <NavLink to="/destination/titan" className='divDestNavLi'>TITAN</NavLink>
                     </nav>
                 </div>

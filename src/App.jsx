@@ -5,6 +5,8 @@ import Crew from './pages/Crew/Crew'
 import Destination from './pages/Destination/Destination'
 import DestMoon from './components/Destination/DestMoon/DestMoon'
 import DestMars from './components/Destination/DestMars/DestMars'
+import DestEu from './components/Destination/DestEu/DestEu'
+import DestTitan from './components/Destination/DestTitan/DestTitan'
 
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
           <Route index element={<DestMoon />} />    
           <Route path='moon' element={<DestMoon/>} />
           <Route path='mars' element={<DestMars/>} />
+          <Route path='europa' element={<DestEu/>} />
+          <Route path='titan' element={<DestTitan/>} />
         </Route>
       </Routes>
 
