@@ -1,0 +1,58 @@
+.divHomeGlo {
+    background-image: url('../../assets/img/home/background-home-desktop.jpg');
+    height: 100vh; /* Assurez-vous que le parent prend toute la hauteur de l'écran */
+    width: 100vw; /* Assurez-vous que le parent prend toute la largeur de l'écran */
+    position: relative; /* Nécessaire pour que les enfants positionnés soient relatifs à ce conteneur */
+}
+
+.divHomeGlo2 {
+    position: absolute; /* Permet de positionner l'élément par rapport au parent */
+    top: 60%;
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Ajuste pour centrer par rapport au milieu de l'élément */
+    height: 70vh; /* Hauteur de la div */
+    width: 75%; /* Largeur de la div */
+    display: flex; /* Si vous voulez aligner les enfants à l'intérieur */
+    align-items: center; /* Centre verticalement les enfants */
+    justify-content: center; /* Centre horizontalement les enfants */
+    padding: 5vh; /* Ajoute un padding interne */
+}
+.divHome1{
+    width: 48%;
+}
+.divHome1>h1{
+    font-size: 23vh;
+    font-weight: 100;
+    font-family: "Bellefair", serif;
+    margin: 0;
+}
+.divHome1>h4{
+    font-family: "Open Sans", sans-serif;
+    font-weight: lighter;
+    line-height: 50%;
+}
+.divHome1>p{
+    text-align: justify;
+    width: 75%;
+    font-family: "Bellefair", sans-serif;
+    font-size: 10pt;
+    font-weight: lighter;
+    line-height: 150%;
+
+}
+.divHome2{
+    width: 48%;
+    justify-content: center;
+    display: flex;    
+}
+.divHome2>button{
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    font-family: "Bellefair", serif;
+    font-size: 16pt;
+    font-weight: lighter;
+    cursor: pointer;
+}

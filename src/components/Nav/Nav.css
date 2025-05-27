@@ -1,7 +1,58 @@
 .divNavLogo{
-
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 50px;
+    border-radius: 50%;
 }
 
-.divNavList{
+.divNavLogo::after {
+    content: '';
+    width: 100%;
+    margin-left: 20px;
+    height: 1px;
+    background-color: #ffffff;
+}
+.divNavGlo{
     display: flex;
+    width: 100vw;
+    padding-top: 10px;
+    font-family: "Barlow Condensed", sans-serif;
+    position: sticky;
+}
+.divNavList{
+    width: 60%;
+    position: absolute;
+    background-color: #ffffff13;
+    height: 60px;
+    align-items: center;
+    right: 0;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+}
+.divNavList>ul{
+    display: flex;
+    list-style: none;
+    right: 0px;
+    gap: 1vw;
+    padding: 0;
+    padding-right: 8px;
+}
+.divNavLi::after{
+    content: "";
+    top: 40px;
+    background-color: #ffffff;
+    width: 100% ;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    display: none;
+}
+.divNavLi:hover::after{
+    display: block;
+}
+.divNavLi{
+    position: relative;
+    cursor: pointer;
 }
