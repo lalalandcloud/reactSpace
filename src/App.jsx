@@ -8,6 +8,9 @@ import DestMars from './components/Destination/DestMars/DestMars'
 import DestEu from './components/Destination/DestEu/DestEu'
 import DestTitan from './components/Destination/DestTitan/DestTitan'
 import CrewCommand from './components/Crew/CrewCommand/CrewCommand'
+import CrewEngi from './components/Crew/CrewEngi/CrewEngi'
+import CrewSpec from './components/Crew/CrewSpec/CrewSpec'
+import CrewPilot from './components/Crew/CrewPilot/CrewPilot'
 
 
 function App() {
@@ -26,6 +29,9 @@ function App() {
         <Route path='/crew' element={<Crew/>}>
           <Route index element={<CrewCommand/>}/>
           <Route path='commander' element={<CrewCommand/>}/>
+          <Route path='engineer' element={<CrewEngi/>}/>
+          <Route path='pilot' element={<CrewPilot/>}/>
+          <Route path='specialist' element={<CrewSpec/>}/>
         </Route>
       </Routes>
 
