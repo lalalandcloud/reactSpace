@@ -13,6 +13,8 @@ import CrewSpec from './components/Crew/CrewSpec/CrewSpec'
 import CrewPilot from './components/Crew/CrewPilot/CrewPilot'
 import Tech from './pages/Tech/Tech'
 import TechVehicle from './components/Technology/TechVehicle/TechVehicle'
+import TechPort from './components/Technology/TechPort/TechPort'
+import TechCapsule from './components/Technology/TechCapsule/TechCapsule'
 
 
 function App() {
@@ -38,6 +40,8 @@ function App() {
         <Route path='/technology' element={<Tech/>}>
           <Route index element={<TechVehicle/>}/>
           <Route path='vehicle' element={<TechVehicle/>}/>
+          <Route path='capsule' element={<TechCapsule/>}/>
+          <Route path='spaceport' element={<TechPort/>}/>
 
         </Route>
 

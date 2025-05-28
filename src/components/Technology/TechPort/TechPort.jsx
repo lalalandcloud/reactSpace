@@ -1,10 +1,8 @@
-import './TechVehicle.css'
-import vehicle from '../../../assets/img/technology/image-launch-vehicle-portrait.jpg'
+import spaceport from '../../../assets/img/technology/image-spaceport-portrait.jpg'
 import { NavLink } from 'react-router-dom'
 
 
-
-export default function TechVehicle(){
+export default function TechPort(){
 
     return(
 
@@ -17,11 +15,11 @@ export default function TechVehicle(){
             </div>
             <div className='divTechText'>
                 <h5>THE TERMINOLOGY</h5>
-                <h1>LAUNCH VEHICLE</h1>
+                <h1>LAUNCH spaceport</h1>
                 <p>Space capsule A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.</p>
             </div>
             <div className='divTechImg'>
-                <img src={vehicle} alt="" />
+                <img src={spaceport} alt="" />
             </div>
         </div>
     )

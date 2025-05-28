@@ -1,31 +1,42 @@
 .divTechVGlo{
     display: grid;
-    width: 95%;
+    width: 90%;
     position: fixed; 
-    top: 35%; 
+    bottom: 20px;
     right: 0;
-    height: 100%;
+    height: 55vh;
+
 }
 .divTechBtn{
     grid-column: 1;
     width: 50px;
+    left: 0;
+    right: 0;
 }
 .btnTech{
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    border: none;
-    border-color: white;
+    height: 60px;
+    width: 60px;
+    border: white solid 1px;
+    background-color: rgba(255, 255, 255, 0);
+    color: #ffffff;
 }
 .divTechText{
     grid-column: 2;
-    width: 35vw;
+    width: 30vw;
+}
 
+.divTechText>h5{
+    left: 0;
 }
 .divTechImg{
     grid-column: 3;
-    width: 35vw;
+    width: 25vw;
+    height: 500px
+
 }
 .divTechImg>img{
     width: 100%;
+    /* height: 100%;
+    object-fit: cover; */
 }
