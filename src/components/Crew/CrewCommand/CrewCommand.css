@@ -1,0 +1,22 @@
+.divCrewGloDet{
+    display: grid;
+    width: 75%;
+    position: absolute; /* Positionnement absolu pour centrer */
+    top: 70%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Ajuste pour centrer par rapport au milieu */
+}
+
+.divCrewText{
+    grid-column: 1;
+}
+.divCrewImg{
+    grid-column: 2;
+    overflow: hidden;
+    height: 60vh;
+    margin-bottom: 20px;
+    width: 30vw;
+}
+.divCrewImg>img{
+    width: 80%;
+}

@@ -1,5 +1,6 @@
 import './Crew.css'
 import Nav from "../../components/Nav/Nav";
+import { Outlet } from 'react-router-dom';
 
 export default function Crew(){
 
@@ -7,11 +8,10 @@ export default function Crew(){
 
         <div className='divCrewGlo'>
 
-            <Nav/>
+            <Nav/>         
+            <h2 className='h2'><span>02 </span>MEET YOUR CREW</h2>
+            <Outlet/>
 
-            <h4>CREW</h4>
-            
-        
         </div>
     )
 }
