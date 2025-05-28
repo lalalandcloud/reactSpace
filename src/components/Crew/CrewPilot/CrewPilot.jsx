@@ -1,4 +1,3 @@
-import './CrewPilot.css'
 import pilot from '../../../assets/img/crew/image-victor-glover.png'
 import { NavLink } from 'react-router-dom'
 

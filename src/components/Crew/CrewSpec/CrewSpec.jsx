@@ -1,4 +1,3 @@
-import './CrewSpec.css'
 import specialist from '../../../assets/img/crew/image-mark-shuttleworth.png'
 import { NavLink } from 'react-router-dom'
 

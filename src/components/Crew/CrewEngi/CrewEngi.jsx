@@ -1,4 +1,3 @@
-import './CrewEngi.css'
 import engineer from '../../../assets/img/crew/image-anousheh-ansari.png'
 import { NavLink } from 'react-router-dom'
 
