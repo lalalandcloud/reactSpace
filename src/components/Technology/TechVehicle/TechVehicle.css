@@ -1,0 +1,31 @@
+.divTechVGlo{
+    display: grid;
+    width: 95%;
+    position: fixed; 
+    top: 35%; 
+    right: 0;
+    height: 100%;
+}
+.divTechBtn{
+    grid-column: 1;
+    width: 50px;
+}
+.btnTech{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-color: white;
+}
+.divTechText{
+    grid-column: 2;
+    width: 35vw;
+
+}
+.divTechImg{
+    grid-column: 3;
+    width: 35vw;
+}
+.divTechImg>img{
+    width: 100%;
+}
