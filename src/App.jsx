@@ -42,11 +42,8 @@ function App() {
           <Route path='vehicle' element={<TechVehicle/>}/>
           <Route path='capsule' element={<TechCapsule/>}/>
           <Route path='spaceport' element={<TechPort/>}/>
-
         </Route>
-
       </Routes>
-
     </>
   )
 }

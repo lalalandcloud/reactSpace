@@ -9,9 +9,13 @@
 }
 .divTechBtn{
     grid-column: 1;
-    width: 50px;
-    left: 0;
-    right: 0;
+    width: 60px;
+}
+.divTechBtn>nav{
+    display: flex;
+    flex-wrap: wrap;
+    height: 250px;
+    justify-content: space-around;
 }
 .btnTech{
     border-radius: 50%;
@@ -20,6 +24,21 @@
     border: white solid 1px;
     background-color: rgba(255, 255, 255, 0);
     color: #ffffff;
+    display: grid;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;    
+}
+.btnTech:hover{
+    border: white solid 1px;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+.btnTech.active{
+    border: white solid 1px;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    scale: 1.3;
 }
 .divTechText{
     grid-column: 2;
@@ -33,7 +52,6 @@
     grid-column: 3;
     width: 25vw;
     height: 500px
-
 }
 .divTechImg>img{
     width: 100%;

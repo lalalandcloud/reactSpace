@@ -9,10 +9,11 @@ export default function TechCapsule(){
 
         <div className='divTechVGlo'>
             <div className='divTechBtn'>
-                <button className="btnTech">1</button>
-                <button className="btnTech">2</button>
-                <button className="btnTech">3</button>
-                <button className="btnTech">4</button>
+                <nav>
+                    <NavLink to="/technology/vehicle" className="btnTech">1</NavLink>
+                    <NavLink to="/technology/capsule" className="btnTech">2</NavLink>
+                    <NavLink to="/technology/spaceport" className="btnTech">3</NavLink> 
+                </nav>
             </div>
             <div className='divTechText'>
                 <h5>THE TERMINOLOGY</h5>
