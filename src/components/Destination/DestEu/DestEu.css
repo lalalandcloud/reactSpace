@@ -1,0 +1,148 @@
+.destEurGlo{
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    width: 75%;
+    position: absolute; /* Positionnement absolu pour centrer */
+    top: 60%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Ajuste pour centrer par rapport au milieu */
+}
+.divEurLeft{
+    width: 50%;
+    /* grid-column: 1; */
+    /* overflow: hidden; */
+}
+.divEurImg{
+    width: 400px;
+}
+.divEurLeft img{
+    width: 100%;
+}
+.divEurText{
+    width: 40%;
+    /* grid-column: 2; */
+
+}
+.divEurText h1{
+    font-size: 55pt;
+    letter-spacing: 6px;
+    font-weight: 100;
+    margin: 0;
+}
+.divEurTextP{
+    line-height: 150%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.692);
+    padding-bottom: 30px;
+}
+.destNavList>ul{
+    display: flex;
+    list-style: none;
+    right: 0px;
+    gap: 1vw;
+    padding: 0;
+    padding-right: 8px;
+}
+.divDestNavLi::after{
+    content: "";
+    top: 20px;
+    background-color: #ffffff;
+    width: 100% ;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    display: none;
+}
+.divDestNavLi:hover::after{
+    display: block;
+}
+.divDestNavLi.active::after{
+    display: block;
+}
+
+.divDestNavLi{
+    position: relative;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    /* padding-bottom: 16px; */
+}
+.destNavList>ul>a{
+    text-decoration: none;
+}
+.destNavList>nav{
+    display: flex;
+    gap: 2vh;
+}
+.destNavList{
+    height: 50px;
+    position: relative;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+p{
+    font-family: sans-serif;
+    margin: 0;
+}
+h5{
+    margin: 0;
+    font-size: 16pt;
+    font-weight: 200;
+    left: 20px;
+    position: relative;
+}
+.divEurText>p:nth-of-type(2){
+    left: 20px;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .destEurGlo {
+        display: flex;
+        flex-direction: column; /* Empile les enfants verticalement */
+        align-items: center; /* Centre les enfants horizontalement */
+        width: 100%; /* Prend toute la largeur */
+        height: auto; /* Ajuste la hauteur automatiquement */
+        position: relative; /* Supprime le positionnement absolu */
+        top: 70px;
+        left: 0;
+        transform: none; /* Supprime la transformation */
+        padding: 20px; /* Ajoute un padding pour le contenu */
+    }
+
+    .divEurLeft {
+        width: 100%; /* Prend toute la largeur */
+        text-align: center; /* Centre le contenu */
+    }
+
+    .divEurImg {
+        width: 200px; /* Réduit la taille de l'image */
+        margin: 0 auto; /* Centre l'image */
+    }
+
+    .divEurText {
+        width: 100%; /* Prend toute la largeur */
+        text-align: center; /* Centre le texte */
+        margin-top: 20px; /* Ajoute un espace entre l'image et le texte */
+    }
+
+    .divEurText h1 {
+        font-size: 24pt; /* Réduit la taille du titre */
+        letter-spacing: 2px; /* Réduit l'espacement des lettres */
+    }
+
+    .divEurTextP {
+        font-size: 12pt; /* Réduit la taille du texte */
+        line-height: 150%;
+        padding-bottom: 20px; /* Réduit le padding inférieur */
+    }
+
+    .destNavList {
+        margin-bottom: 20px; /* Ajoute un espace entre la navigation et le contenu */
+    }
+
+    .divDestNavLi {
+        font-size: 12pt; /* Réduit la taille des liens */
+    }
+}
