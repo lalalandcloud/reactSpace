@@ -96,3 +96,53 @@ h5{
     left: 20px;
     position: relative;
 }
+
+@media (max-width: 768px) {
+    .destEurGlo {
+        display: flex;
+        flex-direction: column; /* Empile les enfants verticalement */
+        align-items: center; /* Centre les enfants horizontalement */
+        width: 100%; /* Prend toute la largeur */
+        height: auto; /* Ajuste la hauteur automatiquement */
+        position: relative; /* Supprime le positionnement absolu */
+        top: 70px;
+        left: 0;
+        transform: none; /* Supprime la transformation */
+        padding: 20px; /* Ajoute un padding pour le contenu */
+    }
+
+    .divEurLeft {
+        width: 100%; /* Prend toute la largeur */
+        text-align: center; /* Centre le contenu */
+    }
+
+    .divEurImg {
+        width: 200px; /* Réduit la taille de l'image */
+        margin: 0 auto; /* Centre l'image */
+    }
+
+    .divEurText {
+        width: 100%; /* Prend toute la largeur */
+        text-align: center; /* Centre le texte */
+        margin-top: 20px; /* Ajoute un espace entre l'image et le texte */
+    }
+
+    .divEurText h1 {
+        font-size: 24pt; /* Réduit la taille du titre */
+        letter-spacing: 2px; /* Réduit l'espacement des lettres */
+    }
+
+    .divEurTextP {
+        font-size: 12pt; /* Réduit la taille du texte */
+        line-height: 150%;
+        padding-bottom: 20px; /* Réduit le padding inférieur */
+    }
+
+    .destNavList {
+        margin-bottom: 20px; /* Ajoute un espace entre la navigation et le contenu */
+    }
+
+    .divDestNavLi {
+        font-size: 12pt; /* Réduit la taille des liens */
+    }
+}

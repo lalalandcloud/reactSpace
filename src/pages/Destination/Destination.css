@@ -13,3 +13,30 @@
 span{
     color: rgb(71, 71, 71);
 }
+
+
+
+@media (max-width: 768px) {
+    .divDestGlo {
+        /* background-image: url('../../assets/img/destination/background-destination-mobile.jpg'); Image adaptée au mobile */
+        height: 100vh; /* Prend toute la hauteur de l'écran */
+        display: flex; /* Change de grid à flex pour simplifier l'empilement */
+        flex-direction: column; /* Empile les enfants verticalement */
+        align-items: center; /* Centre les enfants horizontalement */
+        justify-content: flex-start; /* Aligne les enfants en haut */
+    }
+
+    .h2 {
+        position: relative; /* Change de absolute à relative */
+        top: 0; /* Supprime le décalage vertical */
+        left: 0; /* Supprime le décalage horizontal */
+        text-align: center; /* Centre le texte */
+        font-size: 16pt; /* Réduit la taille du texte */
+        margin: 20px 0; /* Ajoute un espace autour du titre */
+    }
+
+    span {
+        color: rgb(71, 71, 71);
+        font-size: 14pt; /* Ajuste la taille du numéro */
+    }
+}

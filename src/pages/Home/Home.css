@@ -56,3 +56,60 @@
     font-weight: lighter;
     cursor: pointer;
 }
+
+
+@media (max-width: 768px) {
+    .divHomeGlo {
+        background-image: url('../../assets/img/home/background-home-mobile.jpg'); /* Image adaptée au mobile */
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .divHomeGlo2 {
+        position: absolute;
+        top: 50%; /* Ajuste la position pour centrer */
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: auto; /* Ajuste la hauteur pour le contenu */
+        width: 90%; /* Réduit la largeur pour le mobile */
+        display: flex;
+        flex-direction: column; /* Empile les enfants verticalement */
+        align-items: center;
+        justify-content: center;
+        padding: 2vh; /* Réduit le padding */
+    }
+
+    .divHome1 {
+        width: 100%; /* Prend toute la largeur */
+        text-align: center; /* Centre le texte */
+    }
+
+    .divHome1>h1 {
+        font-size: 12vh; /* Réduit la taille du titre */
+    }
+
+    .divHome1>h4 {
+        font-size: 14pt; /* Ajuste la taille du sous-titre */
+        line-height: 120%; /* Ajuste l'espacement des lignes */
+    }
+
+    .divHome1>p {
+        width: 100%; /* Prend toute la largeur */
+        font-size: 10pt; /* Taille adaptée au mobile */
+        line-height: 150%;
+        text-align: center; /* Centre le texte */
+    }
+
+    .divHome2 {
+        width: 100%; /* Prend toute la largeur */
+        justify-content: center;
+        display: flex;
+        margin-top: 20px; /* Ajoute un espace entre le texte et le bouton */
+    }
+
+    .divHome2>button {
+        height: 150px; /* Réduit la taille du bouton */
+        width: 150px;
+        font-size: 14pt; /* Ajuste la taille du texte du bouton */
+    }
+}

@@ -50,3 +50,48 @@
     justify-content: space-between; /* Ajoute un espace entre les boules */
     gap: 20px; /* Ajoute un espacement entre les boules */
 }
+
+@media (max-width: 768px) {
+    .divCrewGloDet {
+        display: flex;
+        flex-direction: column; /* Empile les enfants verticalement */
+        align-items: center; /* Centre les enfants horizontalement */
+        width: 100%; /* Prend toute la largeur */
+        height: auto; /* Ajuste la hauteur automatiquement */
+        position: relative; /* Supprime le positionnement fixe */
+        top: 0;
+        left: 0;
+        transform: none; /* Supprime la transformation */
+        padding: 20px; /* Ajoute un padding pour le contenu */
+    }
+
+    .divCrewText {
+        width: 90%; /* Réduit la largeur pour le mobile */
+        text-align: center; /* Centre le texte */
+        margin-bottom: 20px; /* Ajoute un espace entre le texte et l'image */
+    }
+
+    .divCrewImg {
+        width: 40%; /* Réduit la taille de l'image */
+        height: auto; /* Ajuste la hauteur automatiquement */
+        margin-bottom: 20px; /* Ajoute un espace entre l'image et la navigation */
+    }
+
+    .divCrewImg>img {
+        width: 100%; /* L'image prend toute la largeur de son conteneur */
+    }
+
+    .crewNavList>nav {
+        position: relative; /* Supprime le positionnement fixe */
+        bottom: 0; /* Supprime le décalage vertical */
+        display: flex;
+        justify-content: center; /* Centre les boules horizontalement */
+        gap: 15px; /* Réduit l'espacement entre les boules */
+        margin-top: 20px; /* Ajoute un espace entre la navigation et le contenu */
+    }
+
+    .divCrewNavLi {
+        height: 15px; /* Augmente la taille des boules pour le mobile */
+        width: 15px;
+    }
+}

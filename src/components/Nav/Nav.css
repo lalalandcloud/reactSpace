@@ -5,7 +5,6 @@
     height: 50px;
     border-radius: 50%;
 }
-
 .divNavLogo::after {
     content: '';
     width: 100%;
@@ -49,7 +48,6 @@
     position: absolute;
     right: 0;
     display: none;
-    transition: background-color 0.5s ease-in-out;
 }
 .divNavLi:hover::after{
     display: block;
@@ -57,16 +55,69 @@
 .divNavLi.active::after{
     display: block;
 }
-
 .divNavLi{
     position: relative;
     cursor: pointer;
     color: white;
     text-decoration: none;
-    /* padding-bottom: 16px; */
-    transition: background-color 0.5s ease-in-out;
-
 }
 .divNavList>ul>a{
     text-decoration: none;
+}
+
+/* Styles pour le menu burger */
+.burgerMenu {
+    display: none; /* Caché par défaut */
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 10;
+}
+
+/* Styles pour le menu en mode mobile */
+.divNavList {
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    padding: 0;
+    padding-right: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.divNavList.open {
+    transform: translateY(0); /* Affiche le menu */
+}
+
+.divNavList {
+    transform: none;
+}
+
+/* Media query pour activer le menu burger */
+@media (max-width: 768px) {
+    .burgerMenu {
+        display: block; /* Affiche le bouton burger */
+    }
+
+    .divNavList {
+        position: absolute;
+        /* top: 60px; */
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 20px;
+        padding: 20px;
+        transform: translateY(-100%);
+    }
+
+    .divNavLi {
+        text-align: center;
+        width: 100%;
+    }
 }
