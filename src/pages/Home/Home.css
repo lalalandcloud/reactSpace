@@ -3,6 +3,7 @@
     height: 100vh; /* Assurez-vous que le parent prend toute la hauteur de l'écran */
     width: 100vw; /* Assurez-vous que le parent prend toute la largeur de l'écran */
     position: relative; /* Nécessaire pour que les enfants positionnés soient relatifs à ce conteneur */
+    background-size: cover;
 }
 
 .divHomeGlo2 {

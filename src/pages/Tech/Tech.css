@@ -1,6 +1,7 @@
 .divTechGlo{
     background-image: url('../../assets/img/technology/background-technology-desktop.jpg');
     height: 100%;
+    background-size: cover;
 }
 .h2{
     position: absolute;
